@@ -50,3 +50,16 @@ int main() {
     cout << endl;
    newTotal = (((3 * 7 -6 )) + ((2 * 5) / 4)  + 6);
     cout << endl;
+    
+    
+
+
+    cout << "Hello World! " << endl;
+    cout << "Hello \n World! " <<  "\n";
+
+
+cout << "total: " << fixed << setprecision(2) << total << endl;
+    cout << "Newtotal: " << fixed << setprecision(2) << newTotal << endl;
+
+
+
