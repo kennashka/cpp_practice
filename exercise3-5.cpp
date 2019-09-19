@@ -1,8 +1,3 @@
-// Code seems correct but does not pass a couple test cases.
-
-// Needs to be optimized
-
-
 #include <iostream>
 #include <string>
 #include <iomanip>
@@ -31,7 +26,7 @@ int main() {
         
     inFile.open(file);
     
-    outFile.open("outData.txt");
+    outFile.open("Ch3_Ex5Output.dat");
 
     inFile >> lastName >> firstName >> updatedSalary >> payIncreasePercentage;
     payIncreasePercentage *= .01;
@@ -61,14 +56,3 @@ outFile << firstName <<" "<< lastName <<" "<< updatedSalary << endl;
     // Write your main here
     return 0;
 }
-
-
-
-/* Ch3_Ex5Data.txt File
-
-Miller Andrew 65789.87 5
-Green Sheila 75892.56 6
-Sethi Amit 74900.50 6.1
-
-
-*/
