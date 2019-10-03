@@ -19,10 +19,6 @@ Use 3.1416 as the constant value for any calculations that may need \piπ.
 
 After rearranging the statements, your program should be properly indented.
 
-Grading
-When you have completed your program, click the Submit button to record your score.
-
-
 
 */
 
