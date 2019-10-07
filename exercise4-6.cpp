@@ -35,8 +35,3 @@ cout << boxes_of_cookies << " " << leftovers << " " << container_of_boxes << " "
         cout << boxes_of_cookies << " " << leftovers << " " << container_of_boxes << " " << boxes_of_cookies << endl;
 
     }
-       
-
-
-    return 0;
-}
