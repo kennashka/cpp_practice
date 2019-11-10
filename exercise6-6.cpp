@@ -2,52 +2,34 @@
 
 using namespace std;
 
+void even_or_odd(int num) {
+    if(num % 2 == 0) {
+        cout << 2*num << endl;
+    } else {
+        cout << 5*num << endl;
+    }
+}
+
+void sum_and_avg(int n, int m, int &sum, double &avg) {
+    sum = 0;
+    double count = 0;
+    for(int i = n; i <= m; ++i) {
+        sum += i;
+        count++;
+    }
+    avg = sum / count;
+}
+
 int main() {
-    
-    bool run = true;
-    
-    char yes;
-
-    int number, i;
-
-  bool isPrime = true;
-    
-//     while(run){
-//   cout << "\nEnter y/n to continue?" << endl;
-//     cin >> yes;
-
-//  if (yes =='Y'||yes =='y'){
-        
-cout << "\nEnter a number?" << endl;
-
- cin >> number;
-            
- for(i = 2; i <= number / 2; ++i)
-  {
-      if(number % i == 0)
-      {
-          isPrime = false;
-          break;
-      }
-  }
-  if (isPrime)
-      cout << "\nThis is a prime number" << endl;
-  else
-      cout << "\nThis is not a prime number" << endl;
-
-
-
-            
-            
-        
-  
-        
-//         else{
-//             run = false;
-//             cout << "Program terminated...";
-//         }
-//     }
-
-    
+ 
+    int num, n, m, sum;
+    cout << "Enter number: ";
+    cin >> num >> n >> m;
+      even_or_odd(num);
+    double avg;
+    sum_and_avg(n, m, sum, avg);
+    cout << "Sum = " << sum << endl;
+    cout << "Average = " << avg << endl;
     return 0;
 }
+
